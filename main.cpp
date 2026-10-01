@@ -31,10 +31,6 @@ public:
     void showResult(const string& label, double value) {
         cout << "[Result] " << label << ": " << fixed << setprecision(2) << value << "\n";
     }
-
-    void showResult(double value) {
-        cout << "[Result]: " << fixed << setprecision(2) << value << "\n";
-    }
 };
 
 // ============================================================================
@@ -127,7 +123,7 @@ public:
         int tenureMonths;
 
         cout << "\n--- " << getName() << " ---\n";
-        cout << "Enter loan principal amount: $";
+        cout << "Enter loan principal amount: ";
         cin >> principal;
         cout << "Enter annual interest rate (%): ";
         cin >> annualRate;
